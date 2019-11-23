@@ -1,485 +1,83 @@
-body {
-    padding: 2rem;
-}
-.head1 {
-    background-image: linear-gradient(rgba(126, 213, 111, 0.5),rgba(40,180,133,0.5)), url(hero.jpg);
-    height: 100vh;
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
-}
-.logo {
-    width: 5rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-}
-.out {
-    color: white;
-    font-size: 4rem;
-    font-family: 'Muli', sans-serif;
-    letter-spacing: 0.5rem;
-    animation-name: go-right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes go-right {
-    from {
-        position: relative;
-        left: 0rem;
-        opacity: 0;
-    }
-    to {
-        position: relative;
-        left: 26.5rem;
-        opacity: 1;
-    }
-}
-.happens {
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 1rem;
-    animation-name: go-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes go-left {
-    from {
-        position: relative;
-        left: 50rem;
-        opacity: 0;
-    }
-    to {
-        position: relative;
-        left: 26.5rem;
-        opacity: 1;
-    }
-}
-.discover {
-    color: black;
-    font-family: 'Muli', sans-serif;
-    background-color: white;
-    border: white solid 0.3rem;
-    border-radius: 1.6rem;
-    text-align: center;
-    width: 15rem;
-    padding: 0.4rem;
-    position: relative;
-    left: 38.5rem;
-    cursor: pointer;
-    text-decoration: none;
-    opacity: 0;
-    animation-name: go-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    transition-duration: 0.5s;
-}
-.discover:hover {
-    transform: scale(1.2, 1.2);
-}
-@keyframes go-up {
-    from {
-        position: relative;
-        top: 10rem;
-        opacity: 0;
-    }
-    to {
-        position: relative;
-        top: 0rem;
-        opacity: 1;
-    }
-}
-.div1 {
-    position: relative;
-    top: 5rem;
-}
-.photos {
-    background-color: rgb(250,250,250);
-    transform: skewY(-5deg);
-    margin-top: -7rem;
-    height: 90vh;
-}
-.photos2 {
-    transform: skewY(5deg);
-    position: relative;
-    top: 7rem;
-}
-.tours {
-    text-align: center;
-    background: -webkit-linear-gradient(#7ed56f, #55c57a, #28b485);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Muli', sans-serif;
-    font-size: 2rem;
-    transition-duration: 0.5s;
-}
-.tours:hover {
-    transform: skew(10deg, 5deg);
-    text-shadow: 1rem 1rem 2rem black ;
-}
-.bold {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    color: rgb(116, 114, 114);
-    font-weight: bold;
-}
-.para {
-    width: 25rem;
-    font-family: 'Muli', sans-serif;
-}
-.text {
-    position: relative;
-    left: 8rem;
-    top: 3.5rem;
-}
-.photo1 {
-    height: 10rem;
-    z-index: 3;
-    position: relative;
-    bottom: 15rem;
-    left: 45rem;
-    transition-duration: .5s;
-    box-shadow: 1rem 1rem 2rem;
-}
-.photo1:hover {
-    outline: #4CAF50 solid 1rem;
-    outline-offset: 1rem;
-    transform: scale(1.2, 1.2);
-    z-index: 4;
-}
-
-.img:hover img:not(:hover){     
-    transform: scale(0.95);
-}
-.photo2 {
-    height: 10rem;
-    width: 15rem;
-    z-index: 2;
-    position: relative;
-    bottom: 20rem;
-    left: 40rem;
-    transition-duration: .5s;
-    box-shadow: 1rem 1rem 2rem;
-}
-.photo2:hover {
-    outline: #4CAF50 solid 1rem;
-    outline-offset: 1rem;    
-    transform: scale(1.2, 1.2);
-    z-index: 4;
-}
-.photo3 {
-    height: 10rem;
-    z-index: 1;
-    position: relative;
-    bottom: 22rem;
-    left: 13rem;
-    transition-duration: .5s;
-    box-shadow: 1rem 1rem 2rem;
-}
-.photo3:hover{
-    outline: #4CAF50 solid 1rem;
-    outline-offset: 1rem;
-    transform: scale(1.2, 1.2);
-    z-index: 4;
-}
-.img {
-    position: relative;
-    left: 5rem;
-    top: 5rem;
-}
-.learn {
-    font-family: 'Muli', sans-serif;
-    color: green;
-    border-bottom: 0.07rem solid green;
-    padding-bottom: -2rem;
-    height: 2rem;
-    width: 7rem;
-    text-align: center;
-    transition-duration: 0.5s;
-}
-.learn:hover {
-    color: white;
-    background-color: green;
-}
-.sec3 {
-    background-image: linear-gradient(rgba(126, 213, 111, 0.5),rgba(40,180,133,0.5)), url(nat-1-large.jpg);
-    height: 100vh;
-    transform: skewY(-5deg);
-}
 .card {
-    background-color: rgba(255, 255, 255, 0.6);
-    transform: skewY(5deg);
-    height: 25rem;
-    width: 15rem;
-    transition-duration: 0.5s;
-}
-.card:hover {
-    transform: translateY(-1rem) skewY(5deg);
-}
-.card1{
-    position: relative;
-    top: 10rem;
-    left: 5rem;
-}
-.card2 {
-    position: relative;
-    bottom: 13.3rem;
-    left: 25rem;
-}
-.card3 {
-    position: relative;
-    left: 20rem;
-    bottom: 23.3rem;
-}
-.card4 {
-    position: relative;
-    bottom: 46.6rem;
-    left: 40rem;
-}
-.icon {
-    position: relative;
-    left: 5.5rem;
-    top: 2rem;
-}
-.tot {
-    font-family: 'Muli', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    top: 3rem;
-}
-.par {
-    font-family: 'Muli', sans-serif;
-    text-align: center;
+    height: 10rem;
     width: 10rem;
-    position: relative;
-    left: 2.5rem;
-    top: 4rem;
+    border: white solid;
 }
-.four {
-    background-color: rgb(250,250,250);
-    height: 100vh;
-    transform: skewY(-5deg);
+#card1 {
+    position: relative;
+    top: 0.2rem;
+    left: 25rem;
+    border-radius: 25%;
+}
+#card2 {
+    position: relative;
+    left: 42rem;
+    bottom: 10rem;
+    border-radius: 25%;
+}
+#card3 {
+    position: relative;
+    left: 59rem;
+    border-radius: 25%;
+    bottom: 20.4rem;
+}
+#card4 {
+    position: relative;
+    left: 25rem;
+    border-radius: 25%;
+    bottom: 15rem;
+}
+#card5 {
+    position: relative;
+    left: 42rem;
+    bottom: 25rem;
+    border-radius: 25%;
+}
+#card6 {
+    position: relative;
+    left: 59rem;
+    border-radius: 25%;
+    bottom: 35rem;
+}
+#above {
+    background-color:rgb(23, 50, 202);
+    height: 16rem;
+}
+.title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Assistant', sans-serif;
+}
+#again {
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    position: relative;
+    top: 5rem;
+}
+#guess {
+    position: relative;
+    top: 5rem;
+}
+#new {
+    color: blue;
+    position: relative;
+    left: 10rem;
+    bottom:1rem;
+    font-family: 'Assistant', sans-serif;
+    transition-duration: 0.5s;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+#new:hover {
+    background-color: rgb(23, 50, 202);
+    color: white;
+}
+.all {
+    background-color: rgb(53, 53, 53);
     position: relative;
     bottom: 2rem;
 }
-.four_1 {
-    transform: skewY(5deg);
-    position: relative;
-    top: 5rem;
-}
-.card_1 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 25rem;
-    width: 15rem;
-    box-shadow: 1rem 1rem 2rem rgb(200,200,200);
-    position: relative;
-    left: 15rem;
-    top: 5rem;
-    transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.card_1:hover {
-    transform: rotateY(180deg);
-  }
-.sea {
-    width:15rem;
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
-    z-index: -2;
-}
-.orange {
-    width: 15rem;
-    height: 8.5rem;
-    background-color: rgba(255, 53, 53, 0.6);
-    z-index: 0;
-    position: relative;
-    bottom: 9.65rem;
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
-}
-.the {
-    width:7rem;
-    position: relative;
-    bottom: 15rem;
-    z-index: 0;
-    left: 7rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(255, 145, 0), rgb(255, 207, 145))
-}
-.the_2 {
-    width:8rem;
-    position: relative;
-    bottom: 16.5rem;
-    z-index: 0;
-    left: 6rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(255, 145, 0), rgb(255, 207, 145))
-}
-.la {
-    position: relative;
-    bottom: 15rem;
-    left: 4rem;
-}
-.la_1 {
-    font-family: 'Muli', sans-serif;
-}
-.front, .back {
-    position: absolute;
-    width: 15rem;
-    height: 25rem;
-    backface-visibility: hidden;
-  }
-  .back {
-    transform: rotateY(180deg);
-    background: linear-gradient(to right bottom, rgb(255, 145, 0), rgb(255, 207, 145))
-  }
-  .only {
-      position: relative;
-      left: 6rem;
-      top: 5rem;
-      color: white;
-      font-family: 'Muli', sans-serif;
-
-  }
-  .money {
-      color: white;
-      font-size: 5rem;
-      font-family: 'Muli', sans-serif;
-    position: relative;
-    left: 1.7rem;
-  }
-  .book {
-    color: black;
-    font-family: 'Muli', sans-serif;
-    background-color: white;
-    border: white solid 0.3rem;
-    border-radius: 1.6rem;
-    text-align: center;
-    width: 10rem;
-    padding: 0.4rem;
-    position: relative;
-    left: 1.8rem;
-    cursor: pointer;
-  }
-  .card_2 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 25rem;
-    width: 15rem;
-    box-shadow: 1rem 1rem 2rem rgb(200,200,200);
-    position: relative;
-    left: 37rem;
-    bottom: 20rem;
-    transition: transform 0.8s;
-  transform-style: preserve-3d;
-  }
-  .card_2:hover {
-    transform: rotateY(180deg);
-  }
-  .front_1, .back_1 {
-    position: absolute;
-    width: 15rem;
-    height: 25rem;
-    backface-visibility: hidden;
-  }
-  .back_1 {
-    transform: rotateY(180deg);
-    background: linear-gradient(to right bottom, rgb(160, 255, 72), rgb(3, 194, 35))
-  }
-  .green {
-    width: 15rem;
-    height: 9.5rem;
-    background-color: rgba(60, 255, 53, 0.6);
-    z-index: 0;
-    position: relative;
-    bottom: 10.6rem;
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
-  }
-  .the_1 {
-    width:10rem;
-    position: relative;
-    bottom: 16.5rem;
-    z-index: 0;
-    left: 4rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(160, 255, 72), rgb(3, 194, 35))
-  }
-  .the_2_1 {
-    width:5rem;
-    position: relative;
-    bottom: 18.2rem;
-    z-index: 0;
-    left: 9rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(160, 255, 72), rgb(3, 194, 35))
-  }
-  .la_2 {
-    position: relative;
-    bottom: 17rem;
-    left: 3rem;
-}
-.card_3 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 25rem;
-    width: 15rem;
-    box-shadow: 1rem 1rem 2rem rgb(200,200,200);
-    position: relative;
-    left: 60rem;
-    bottom: 45rem;
-    transition: transform 0.8s;
-  transform-style: preserve-3d;
-  }
-  .card_3:hover {
-    transform: rotateY(180deg);
-  }
-  .blue {
-    width: 15rem;
-    height: 10.2rem;
-    background-color: rgba(37, 59, 255, 0.6);
-    z-index: 0;
-    position: relative;
-    bottom: 11.4rem;
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
-  }
-  .the_1_1 {
-    width:9rem;
-    position: relative;
-    bottom: 17.5rem;
-    z-index: 0;
-    left: 4.5rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(91, 143, 255), rgb(10, 78, 226))
-  }
-  .the_2_1_1 {
-    width:10.5rem;
-    position: relative;
-    bottom: 19.2rem;
-    z-index: 0;
-    left: 3rem;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-    background: linear-gradient(to right bottom, rgb(174, 185, 207), rgb(10, 78, 226))
-  }
-  .la_2_1 {
-    position: relative;
-    bottom: 18rem;
-    left: 3rem;
-}
-.front_1_1, .back_1_1 {
-    position: absolute;
-    width: 15rem;
-    height: 25rem;
-    backface-visibility: hidden;
-  }
-  .back_1_1 {
-    transform: rotateY(180deg);
-    background: linear-gradient(to right bottom, rgb(174, 185, 207), rgb(10, 78, 226))
-  }
