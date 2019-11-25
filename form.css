@@ -1,0 +1,253 @@
+body {
+    background-image: url("galaxy.jpg");
+    background-size: cover;
+}
+.logo {
+    border-radius: 50%;
+    height: 10rem;
+    position: relative;
+    left: 40rem;
+    top: 15rem;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border: rgb(153, 63, 255) solid;
+    cursor: pointer;
+}
+@keyframes spin {
+    50% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: translateY(-14rem);
+    }
+}
+@keyframes up{
+    100% {
+        transform: translateY(-14rem);
+        opacity: 0.8;
+    }
+}
+.ind {
+    background-color: rgb(156, 156, 156);
+    background-image:  url("indiv.png");
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+    height: 25rem;
+    width: 20rem;
+    border: rgb(153, 63, 255) solid;
+    border-radius: 1rem;
+    position: relative;
+    left: 20rem;
+    top: 20rem;
+    opacity: 0;
+    animation-name: up;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.ind:hover {
+    background-image: url("indivyes.png");
+}
+.team {
+    background-color: rgb(156, 156, 156);
+    background-image:  url("team.png");
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+    border: rgb(153, 63, 255) solid;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+    left: 50.1rem;
+    top: 19.7rem;
+    opacity: 0;
+    animation-name: up;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.team:hover {
+        background-image: url(teamyes.png);
+        background-size: 9rem;
+}
+.text {
+    color:white;
+    text-align: center;
+    position: relative;
+    left: 0.7rem;
+    top: 15rem;
+    height: 1.5rem;
+    width: 15rem;
+    padding: 1.8rem;
+    border: rgb(83, 83, 83) solid 0.1rem;
+    border-radius: 1rem;
+    font-family: 'Pavanam', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: initial;
+}
+.text:hover {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: rgb(153, 63, 255) solid 0.1rem;
+}
+#card1:hover {
+    transform: translateY(-2rem);
+}
+#card1 {
+    height: 0rem;
+    width: 0rem;
+    transition-duration: 0.5s;
+}
+#card2:hover {
+    transform: translateY(-2rem);
+}
+#card2 {
+    height: 0rem;
+    width: 0rem;
+    transition-duration: 0.5s;
+}
+#card3 {
+    background-color: rgb(156, 156, 156);
+    border: rgb(153, 63, 255) solid;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 38rem;
+    position: relative;
+    top: 34rem;
+    left: 34rem;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.text3 {
+    color: white;
+    font-family: 'Pavanam', sans-serif;
+    width: 15rem;
+    position: relative;
+    left: 3rem;
+    top: 2rem;
+}
+.place {
+    color: rgb(110, 110, 110);
+    font-family: 'Pavanam', sans-serif;
+    width: 15rem;
+    position: relative;
+    left: 3rem;
+    top:  2rem;
+}
+#back1 {
+    color:white;
+    text-align: center;
+    position: relative;
+    left: 0.7rem;
+    height: 1.2rem;
+    width: 8rem;
+    border: rgb(83, 83, 83) solid 0.1rem;
+    border-radius: 1rem;
+    font-family: 'Pavanam', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: initial;
+}
+#back1:hover {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: rgb(153, 63, 255) solid 0.1rem;
+}
+#submit {
+    color:white;
+    text-align: center;
+    position: relative;
+    left: 13.7rem;
+    top: 3rem;
+    height: 1.2rem;
+    width: 8rem;
+    border: rgb(83, 83, 83) solid 0.1rem;
+    border-radius: 1rem;
+    font-family: 'Pavanam', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: initial;
+}
+#submit:hover {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: rgb(153, 63, 255) solid 0.1rem;
+}
+#card4 {
+    background-color: rgb(156, 156, 156);
+    border: rgb(153, 63, 255) solid;
+    border-radius: 1rem;
+    width: 35rem;
+    height: 53rem;
+    position: relative;
+    bottom: 9.3rem;
+    left: 28rem;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+#submit2 {
+    color:white;
+    text-align: center;
+    position: relative;
+    left: 24rem;
+    top: 2rem;
+    height: 1.2rem;
+    width: 8rem;
+    border: rgb(83, 83, 83) solid 0.1rem;
+    border-radius: 1rem;
+    font-family: 'Pavanam', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: initial;
+}
+#submit2:hover {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: rgb(153, 63, 255) solid 0.1rem;
+}
+.place2 {
+    color: rgb(110, 110, 110);
+    font-family: 'Pavanam', sans-serif;
+    width: 20rem;
+    position: relative;
+    left: 2rem;
+}
+.text4 {
+    color: white;
+    font-family: 'Pavanam', sans-serif;
+    width: 15rem;
+    position: relative;
+    left: 2rem;
+}
+.leader {
+    border: black solid;
+    border-radius: 1rem;
+    width: 29rem;
+    height: 15rem;
+    position: relative;
+    left: 3rem;
+    top: 0.7rem;
+}
+#back2 {
+    color:white;
+    text-align: center;
+    position: relative;
+    left: 0.7rem;
+    height: 1.2rem;
+    width: 8rem;
+    border: rgb(83, 83, 83) solid 0.1rem;
+    border-radius: 1rem;
+    font-family: 'Pavanam', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: initial;
+}
+#back2:hover {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: rgb(153, 63, 255) solid 0.1rem;
+}
