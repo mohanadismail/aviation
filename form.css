@@ -1,30 +1,74 @@
 body {
     background-image: url("galaxy.jpg");
     background-size: cover;
+    scroll-behavior: smooth;
+}
+#body {
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+}
+.row {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.row1 {
+    max-width: 25rem;
+    margin: 0 auto;
+    position: relative;
+}
+.col-1-of-2 {
+    float: left;
+    width: 20rem;
+}
+.col-1-of-2:not(:last-child)
+{
+    margin-right: 10rem;
+}
+.col-1-of-3 {
+    float: left;
+    position: absolute;
+}
+.col-1-of-3:not(:last-child)
+{
+    margin-right: 10rem;
 }
 .logo {
+    display: block;
     border-radius: 50%;
     height: 10rem;
-    position: relative;
-    left: 40rem;
-    top: 15rem;
+    width: auto;
+    margin: 3rem auto;
     animation-name: spin;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border: rgb(153, 63, 255) solid;
     cursor: pointer;
+    text-align: center;
 }
 @keyframes spin {
+    0% {
+        transform: translateY(14rem) rotateY(0);
+    }
     50% {
-        transform: rotateY(360deg);
+        transform: translateY(14rem) rotateY(360deg);
     }
     100% {
-        transform: translateY(-14rem);
+        transform: translateY(0) rotateY(360deg);
     }
 }
 @keyframes up{
+    0%{
+        transform: translateY(14rem);
+    }
     100% {
-        transform: translateY(-14rem);
+        transform: translateY(0);
         opacity: 0.8;
     }
 }
@@ -38,9 +82,6 @@ body {
     width: 20rem;
     border: rgb(153, 63, 255) solid;
     border-radius: 1rem;
-    position: relative;
-    left: 20rem;
-    top: 20rem;
     opacity: 0;
     animation-name: up;
     animation-delay: 1s;
@@ -60,9 +101,6 @@ body {
     border-radius: 1rem;
     height: 25rem;
     width: 20rem;
-    position: relative;
-    left: 50.1rem;
-    top: 19.7rem;
     opacity: 0;
     animation-name: up;
     animation-delay: 1s;
@@ -98,16 +136,14 @@ body {
     transform: translateY(-2rem);
 }
 #card1 {
-    height: 0rem;
-    width: 0rem;
+
     transition-duration: 0.5s;
 }
 #card2:hover {
     transform: translateY(-2rem);
 }
 #card2 {
-    height: 0rem;
-    width: 0rem;
+
     transition-duration: 0.5s;
 }
 #card3 {
@@ -116,11 +152,9 @@ body {
     border-radius: 1rem;
     width: 25rem;
     height: 38rem;
-    position: relative;
-    top: 34rem;
-    left: 34rem;
     opacity: 0;
     transition-duration: 0.5s;
+    transform: translateY(0rem);
 }
 .text3 {
     color: white;
@@ -183,11 +217,10 @@ body {
     border-radius: 1rem;
     width: 35rem;
     height: 53rem;
-    position: relative;
-    bottom: 9.3rem;
-    left: 28rem;
     opacity: 0;
     transition-duration: 0.5s;
+    position: relative;
+    right: 4rem;
 }
 #submit2 {
     color:white;
@@ -250,4 +283,24 @@ body {
     background-color: white;
     color: rgb(83, 83, 83);
     border: rgb(153, 63, 255) solid 0.1rem;
+}
+@media (max-width: 900px) {
+    .col-1-of-2 {
+        width: 100%;
+    }
+    .col-1-of-2:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    .ind {
+        margin: 0 auto;
+    }
+    .team {
+        margin: 0 auto;
+    }
+    #card3 {
+        margin: 0 auto;
+    }
+    #card4 {
+        margin: 0 auto;
+    }
 }
