@@ -3,6 +3,7 @@ html {
 }
 body {
     background-image: url("galaxy.jpg");
+    background-size: cover;
 }
 h1 {
     font-family: 'Dancing Script', cursive;
@@ -43,6 +44,7 @@ h1 {
     text-align: center;
     color: white;
     margin-top: 20rem;
+    font-size: 4rem;
 }
 #about {
     width: 60%;
@@ -73,7 +75,7 @@ p {
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
 }
-#contact {
+.contact {
     display: flex;
     justify-content: center;
     height: 8%;
@@ -107,7 +109,7 @@ p {
 .con {
     display: flex;
     justify-content: center !important;
-    margin-bottom: 10rem;
+    margin-bottom: 25rem;
     margin-top: 10rem;
 }
 @keyframes pop {
