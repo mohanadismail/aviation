@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("galaxy.jpg");
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+#logo {
+    border-radius: 50%;
+    width: 15%;
+    animation-name: pop;
+    animation-duration: 1s;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    margin-top: 5rem;
+}
+.slogan {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 7rem;
+    color: yellow;
+    font-family: 'Dancing Script', cursive;
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+}
+#arrow {
+    width: 5rem;
+    background-color: gray;
+    border-radius: 50%;
+    height: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.about {
+    text-align: center;
+    color: white;
+    margin-top: 20rem;
+}
+#about {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+p {
+    font-size: 1.75rem;
+    font-family: 'Dancing Script', cursive;
+}
+#robo {
+    margin-top: 2rem;
+}
+.eve {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+}
+#events {
+    margin-top: 20rem;
+}
+.events {
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    color: white;
+    margin-top: 15rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+.mail{
+    width: 7rem;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 2rem;
+    height: 7rem;
+}
+.fb {
+    width: 11rem;
+    height: 11rem;
+    background-color:rgb(59, 89, 152);
+    border-radius: 50%;
+    margin-left: 4rem;
+}
+#mail {
+    width: 7rem;
+    height: 7rem;
+}
+#fb {
+    width: 11rem;
+    height: 11rem;
+}
+.con {
+    display: flex;
+    justify-content: center !important;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.navi:hover {
+    transform: translateY(-1rem);
+}
+.anch {
+    margin-top: 20rem;
+    background-color: gray;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    padding: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
